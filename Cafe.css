@@ -1,0 +1,164 @@
+header {
+  display: flex;
+
+  background-color: black;
+}
+header .header {
+  display: flex;
+  flex: 1;
+  background-color: black;
+  color: #aa7f4a;
+}
+
+header .header .logo img {
+  width: 85px;
+}
+
+header .header h1 {
+  font-family: "Ephesis", cursive;
+  letter-spacing: 10px;
+}
+nav {
+  align-items: center;
+  justify-content: center;
+
+  width: 700px;
+}
+a {
+  text-decoration: none;
+  color: #aa7f4a;
+  font-family: "Ephesis", cursive;
+  font-size: 35px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./Ressources/cafe.jpg);
+  background-size: cover;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Stylisation du formulaire */
+main #form {
+  /* position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 550px;
+  width: 200px;
+  padding-top: 20px;
+  border-radius: 15px;
+  text-align: -webkit-center;
+  background-color: rgba(48, 28, 22, 0.5);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: bold;
+}
+
+#form input[type="number"],
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  height: 40px;
+  display: 16px;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+#form select {
+  margin-top: 10px;
+  padding: 10px, 0;
+}
+
+#form:hover {
+  background-color: rgba(170, 127, 74, 0.5);
+}
+
+#form [type="submit"] {
+  border: none;
+  height: 40px;
+  outline: none;
+  background-color: rgba(48, 28, 22, 0.5);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Stylisation du tableauProduit */
+.divInventaire .tableauProduit {
+  border: 1px solid #bdc3d7;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  /* position: absolute;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%); */
+  border-collapse: collapse;
+  width: 800px;
+  height: 200px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tableauProduit tr {
+  transition: all 0.2s ease-in;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tableauProduit th,
+td {
+  padding: 12px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.tableauProduit .trHead {
+  background-color: #aa7f4a;
+  font-weight: bold;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style de la quantité */
+
+.stock5 {
+  background-color: green;
+  padding: 5px;
+}
+
+.stock1 {
+  background-color: orange;
+  padding: 5px;
+}
+
+.stock0 {
+  background-color: red;
+  padding: 5px;
+}

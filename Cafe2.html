@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajout produits</title>
+    <link rel="stylesheet" href="Cafe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="header">
+          <div class="logo">
+            <img src="Ressources/Coffee_logo2.png">
+          </div>
+          <div class="h1"><h1>Le café des délices</h1></div>
+        </div>
+        <div class="navBarre">
+        <nav>
+            <ul>
+                <a href="#thead"><li>Inventaire</li></a>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+      <div class="conteneur">
+      <div id="form">
+        <form id="formProduit">
+          <label>Type de produit :</label>
+          <select id="select" name="selectProduit">
+            <option value="BA">Boisson alcoolisée</option>
+            <option value="BNA">Boisson non alcoolisée</option>
+            <option value="AUTRE">Autre produits</option>
+          </select>
+        </br>
+        </br>
+            <label>Nom du produit : </label>
+            <input class="name" type="text" name="nom" placeholder="Nom du produit">
+        </br>
+        </br>
+            <label>Quantité :</label>
+            <input class="quantite" type="number" min="0" name="quantite" placeholder="Quantité">
+        </br>
+        </br>
+            <label>Prix achat HT :</label>
+            <input class="achatHT" type="number" min="0" name="achatHT" placeholder="Prix achat HT">
+        </br>
+        </br>
+            <label>Prix de vente HT :</label>
+            <input class="venteHT" type="number" min="0" name="venteHT" placeholder="Prix vente HT">
+        </br>
+        </br>
+            <label>Degrés alcool :</label>
+            <input class="degres" type="number" min="0" name="degresAlcool" placeholder="Degrés alcool">
+        </br>
+        </br>
+        <button type="submit" class="buttonSubmit">AJOUTER</button>
+      </form>
+      </div>
+      <div class= divInventaire>
+        
+        <table class="tableauProduit">
+          <thead id="thead">
+            <tr class="trHead">
+              <td>Type</td>
+              <td>Nom</td>
+              <td>Quantité</td>
+              <td>Achat HT</td>
+              <td>Vente HT</td>
+              <td>Degrés</td>
+              <td>Marge</td>
+              <td>Vente TTC</td>
+              <td>Etat du stock</td>
+              <td>Sup.</td>
+              <td>Sauv.</td>
+              
+            </tr>
+          </thead>
+          <tbody class="tBody"></tbody>
+        </table>
+      
+      </div>
+    </div>
+    </main>
+    <script type="text/javascript" src="Cafe.js"></script>
+  </body>
+</html>
